@@ -1,0 +1,161 @@
+// UTILS
+@import "./utils/variebles";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/visually-hidden";
+
+// VENDORS
+@import "./vendors/normalize";
+
+// СБРОС СТИЛЕЙ
+@import "./base/common";
+
+// БАЗОВЫЕ СТИЛИ
+@import "./base/conteiner";
+
+// СТИЛИ КОМПОНЕНТОВ
+@import "./components/title";
+@import "./components/logo";
+@import "./components/modal-btn";
+@import "./components/social-list";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+
+// ОСНОВНЫЕ СТИЛИ
+@import "./layout/page-header";
+@import "./layout/navigation";
+@import "./layout/header-contacts";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/doing";
+@import "./layout/_team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/footer-form";
+@import "./layout/portfolio-filter";
+@import "./layout/portfolio-card";
+
+// $color: red;
+// body {
+//   background-color: $color;
+// }
+
+// .box {
+//   color: $brand-color;
+//   &:hover {
+//     color: blue;
+//   }
+// }
+
+// .button {
+//   color: aqua;
+//   box:hover & {
+//     color: aquamarine;
+//   }
+// }
+
+// ul {
+//   background-color: #fff;
+//   @extend %list;
+// }
+
+// list {
+//   background-color: #fff;
+//   &:nth-child(3) {
+//     background-color: #fff;
+//   }
+//   &:hover {
+//     color: red;
+//   }
+// }
+
+// @mixin bordered($brand-color: red, $type: dashed) {
+//   border: 1px $type $brand-color;
+//   font-style: italic;
+//   font-weight: normal;
+// }
+
+// .list {
+//   @include bordered($type: solid);
+// }
+// .list {
+//   @include bordered();
+// }
+
+// .check {
+//   color: #000;
+//   &:checked:hover {
+//     color: aquamarine;
+//   }
+//   list:hover &:checked {
+//     color: #000;
+//   }
+// }
+
+// p {
+//   @extend %centeredFlex;
+// }
+
+// div {
+//   @extend %centeredFlex;
+// }
+
+// button {
+//   @extend %centeredFlex;
+// }
+
+// p {
+//   @include centeredFlex(flex);
+// }
+
+// div {
+//   @include centeredFlex(flex);
+// }
+
+// button {
+//   @include centeredFlex(inline-flex);
+// }
+
+// $icons: "check" "close-x" "close-x" "twitter" "ig" "rrjrj" "facebook";
+
+// @each $iconName in $icons {
+//   .icons-#{$iconName} {
+//     background-image: url("../images/icons/#{$iconName}.svg");
+//   }
+// }
+
+// $check: "dggragr" "faffrg" "fagaga" "aggrazgr";
+
+// @each $pic in $check {
+//   .check-#{$pic} {
+//     color: red;
+//   }
+// }
+
+// $pictureList: "check" "company11" "group55";
+
+// @each $pictureIcon in $pictureList {
+//   .cool-#{$pictureIcon} {
+//     background-image: url("../images/icons/#{$pictureIcon}.svg");
+//   }
+// }
+
+// @mixin genereteIcons($iconList) {
+//   @each $pictureIcon in $iconList {
+//     .pgggg-#{$pictureIcon} {
+//       background-image: url("../images/icons/#{$pictureIcon}.svg");
+//     }
+//   }
+// }
+
+// @include genereteIcons($pictureList);
+
+// @mixin olala($olalist) {
+//   @each $pictureIcon in $olalist {
+//     .ola-#{$pictureIcon} {
+//       background-image: url("../images/icons/#{$pictureIcon}.svg");
+//     }
+//   }
+// }
+// @include olala($pictureList);

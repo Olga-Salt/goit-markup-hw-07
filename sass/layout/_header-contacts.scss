@@ -1,0 +1,49 @@
+.section-header__contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.section-header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.section-header__link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-grey);
+  display: inline-flex;
+  align-items: center;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+
+.section-header__icon {
+  margin-right: 10px;
+  fill: menu__link--currentColor;
+}
+
+// .section-header__link:hover,
+// .section-header__link:focus {
+//   color: $brand-color;
+// }
+
+/*================ вариант 1 =========== */
+/* .section-header__icon {
+  fill: $color-grey;
+  margin-right: 10px;
+}
+.section-header__link:hover .section-header__icon,
+.section-header__link:focus .section-header__icon {
+  fill: $brand-color;
+} */
+
+/*================ вариант 2 =========== */

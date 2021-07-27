@@ -1,0 +1,15 @@
+.section-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+
+  &__conteiner {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// .section-header__conteiner {
+//   display: flex;
+//   align-items: center;
+// }
