@@ -39,3 +39,9 @@
 .doing__conteiner {
   padding-top: 0;
 }
+
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}

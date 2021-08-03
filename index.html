@@ -43,6 +43,7 @@
             </li>
           </ul>
         </nav>
+
         <ul class="list section-header__contacts">
           <li class="section-header__item">
             <a
@@ -65,6 +66,67 @@
             >
           </li>
         </ul>
+        <button type="button" class="burger-btn" data-menu-open>
+          <svg class="burger-btn__icon">
+            <use href="./images/icons/sprite.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu" data-menu>
+        <div class="conteiner mob-menu__conteiner">
+          <button class="mob-menu__close-btn" data-menu-close>
+            <svg class="mob-menu__close-icon">
+              <use href="./images/icons/sprite.svg#icon-close-x"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link link">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link link"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link link">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="mob-menu__contacts-wrapper">
+            <ul class="mob-contacts list">
+              <li class="mob-contacts__item">
+                <a class="mob-contacts__link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contacts__item">
+                <a
+                  class="mob-contacts__link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mob-social list">
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Instagram</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Twitter</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">Facebook</a>
+              </li>
+              <li class="mob-social__item">
+                <a href="" class="mob-social__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- =========== end section header ============== -->
@@ -144,58 +206,140 @@
       </section>
 
       <!--=============== section our doing ===================-->
-      <section class="section doing">
+      <section class="section doing work">
         <div class="conteiner doing__conteiner">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="list doing__list">
             <li class="doing__item">
               <div class="thumb-card">
-                <img
-                  src="./images/note.jpg"
-                  alt="человек верстает сайт на компьютере"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/note.webp 1x, ./images/box1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/note.jpg 1x, ./images/box1@2x.jpg 2x"
+                  />
+
+                  <img
+                    src="#"
+                    alt="человек верстает сайт на компьютере"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <p class="thumb-card__overlay">Десктопные приложения</p>
               </div>
             </li>
             <li class="doing__item">
               <div class="thumb-card">
-                <img
-                  src="./images/box2.jpg"
-                  alt="человек оптимизирует сайт для мобильных устройств"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/box2.webp 1x, ./images/box2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  />
+                  <img
+                    src="#"
+                    alt="человек оптимизирует сайт для мобильных устройств"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <p class="thumb-card__overlay">Мобильные приложения</p>
               </div>
             </li>
             <li class="doing__item">
               <div class="thumb-card">
-                <img
-                  src="./images/box3.jpg"
-                  alt="человек выполняет цветокоррекцию на планшете"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/box3.webp 1x, ./images/box3@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  />
+                  <img
+                    src="#"
+                    alt="человек выполняет цветокоррекцию на планшете"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <p class="thumb-card__overlay">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
+
       <!--========= section our team ==============-->
       <section class="section team">
         <div class="conteiner">
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                src="./images/img.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team1.webp    1x,
+                    ./images/deckstope/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team1.jpg    1x,
+                    ./images/deckstope/team1@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team1.webp    1x,
+                    ./images/tablet/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team1.jpg    1x,
+                    ./images/tablet/team1@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team1.webp    1x,
+                    ./images/mobile/team1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team1.jpg    1x,
+                    ./images/mobile/team1@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="Фото Игоря Демьяненко" width="100%" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__members">Игорь Демьяненко</h3>
                 <p class="team__description">Product designer</p>
@@ -240,12 +384,57 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img2.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team2.webp    1x,
+                    ./images/deckstope/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team2.jpg    1x,
+                    ./images/deckstope/team2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team2.webp    1x,
+                    ./images/tablet/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team2.jpg    1x,
+                    ./images/tablet/team2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team2.webp    1x,
+                    ./images/mobile/team2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team2.jpg    1x,
+                    ./images/mobile/team2@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="Фото Ольги Репиной" width="100%" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__members">Ольга Репина</h3>
                 <p class="team__description">Frontend Developer</p>
@@ -290,12 +479,57 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img3.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team3.webp    1x,
+                    ./images/deckstope/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team3.jpg    1x,
+                    ./images/deckstope/team3@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team3.webp    1x,
+                    ./images/tablet/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team3.jpg    1x,
+                    ./images/tablet/team3@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team3.webp    1x,
+                    ./images/mobile/team3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team3.jpg    1x,
+                    ./images/mobile/team3@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="Фото Николая Тарасова" width="100%" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__members">Николай Тарасов</h3>
                 <p class="team__description">Marketing</p>
@@ -340,12 +574,57 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/img4.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team4.webp    1x,
+                    ./images/deckstope/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/deckstope/team4.jpg    1x,
+                    ./images/deckstope/team4@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team4.webp    1x,
+                    ./images/tablet/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/tablet/team4.jpg    1x,
+                    ./images/tablet/team4@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team4.webp    1x,
+                    ./images/mobile/team4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 280px)"
+                  srcset="
+                    ./images/mobile/team4.jpg    1x,
+                    ./images/mobile/team4@2x.jpg 2x
+                  "
+                />
+                <img src="#" alt="Фото Михаила Ермакова" width="100%" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__members">Михаил Ермаков</h3>
                 <p class="team__description">UI Designer</p>
@@ -450,9 +729,8 @@
           </ul>
         </div>
       </section>
-
-      <!-- =========== end Постоянные клиенты========= -->
     </main>
+    <!-- =========== end Постоянные клиенты========= -->
 
     <!--=============== footer ======================-->
 
@@ -466,7 +744,7 @@
           >
           <!--============ address ======================= -->
           <address class="address">
-            <ul class="list">
+            <ul class="list address__list">
               <li class="address__item">
                 <a
                   class="link address__link--map"
@@ -644,5 +922,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
